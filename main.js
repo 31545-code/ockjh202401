@@ -89,11 +89,11 @@ function onNumberClick() {
     activeSquare.classList.add("true");
     let filledSquares = document.getElementsByClassName("filled");
     if(filledSquares.length==81)
-      endGame("Bravo! Sudoku Conquered!","green");
+      endGame("훌륭합니다!","green");
     return;
   }
   mistake++;mistakeElement.innerHTML=mistake+"/3";
-  if(mistake==3) endGame("Game Over! 3 Strikes,Try Again!","darkred");
+  if(mistake==3) endGame("게임 오버","darkred");
 }
 
 function endGame(message,color){
