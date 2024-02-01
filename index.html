@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles1.css">
+  <script src="https://kit.fontawesome.com/089ad322db.js" crossorigin="anonymous"></script>
+  <script src="sudoku.js"></script>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div id="gameBoard">
+
+      <div class="square top left"></div>
+      <div class="square top"></div>
+      <div class="square top right"></div>
+      <div class="square top"></div>
+      <div class="square top"></div>
+      <div class="square top right"></div>
+      <div class="square top"></div>
+      <div class="square top"></div>
+      <div class="square right top"></div>
+      
+      <div class="square left"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      
+      <div class="square left bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square right bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square right bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square right bottom"></div>
+      
+      <div class="square left"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      
+      <div class="square left"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      
+      <div class="square left bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square right bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square right bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square right bottom"></div>
+      
+      <div class="square left"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      
+      <div class="square left"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square right"></div>
+      
+      <div class="square bottom left"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom right"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom right"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom"></div>
+      <div class="square bottom right"></div>
+    </div>
+    <div class="buttonContainer">
+      <div>
+        <span>실수</span>
+        <span id="mistakes">0/3</span>
+        <span>힌트:</span>
+        <span id="hint">3/3</span>
+      </div>
+      <div>
+        <button id="eraseButton" title="지우개"><i class="fa fa-eraser"></i></button>
+        <button id="hintButton" title="힌트"><i class="fa fa-circle-info"></i></button>
+      </div>
+      <div class="numbers">
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+      </div>
+      <div>
+        <button id="newGameButton">새 게임</button>
+        <button id="solveButton">맞추기</button>
+        <select id="difficulty">
+          <option value="easy">쉬움</option>
+          <option value="medium">중급</option>
+          <option value="hard">어려움</option>
+          <option value="insane">고급</option>
+          <option value="inhuman">익스트림</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="alert"></div>
+</body>
+</html>
